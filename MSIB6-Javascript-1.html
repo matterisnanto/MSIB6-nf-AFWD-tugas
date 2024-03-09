@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slip Gaji</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        tbody tr td{
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        #jumlah {
+            background-color: #009dffc9;
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        footer p {
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>Slip Gaji</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td id="nama"></td>
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td>:</td>
+                    <td id="jabatan"></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>:</td>
+                    <td id="status"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td id="gapok" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Jabatan</td>
+                    <td id="tunjab"colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Keluarga</td>
+                    <td id="tunkel" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>BPJS</td>
+                    <td id="bpjs" colspan="2"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Jumlah</td>
+                    <td id="jumlah" colspan="2"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+    </fieldset>
+    <footer>
+        <p>copyright &copy; 2024 RACHMAT TRISNANTO</p>
+    </footer>
+
+
+    <script>
+         // Data
+    let nama = "Ridwan Kamil";
+    let jabatan = "Manager";
+    let status = "Menikah"
+
+
+    //kondisi jabatan
+    if (jabatan == "Manager") 
+				gaji = 15000000 //TRUE 1
+            else if (jabatan == "Asisten Manager") 
+				gaji = 10000000 //TRUE 2
+            else if (jabatan == "Staff") gaji = 5000000 
+		else gaji = 0
+
+
+    //operator
+    let tj = gaji * 0.15
+    let bpjs = gaji * 0.1
+    let mnsbpjs = -bpjs
+    let tk = (status == "Menikah") ? gaji * 0.2 : 0; 
+    jumlah = gaji + tj - bpjs + tk
+
+    // Memasukkan data ke dalam tabel
+    document.getElementById("nama").innerText = nama;
+    document.getElementById("jabatan").innerText = jabatan;
+    document.getElementById("status").innerText = status;
+    document.getElementById("gapok").innerText = gaji;
+    document.getElementById("tunjab").innerText = tj;
+    document.getElementById("tunkel").innerText = tk;
+    document.getElementById("bpjs").innerText = mnsbpjs;
+    document.getElementById("jumlah").innerText = jumlah;
+    </script>
+
+</body>
+</html>
