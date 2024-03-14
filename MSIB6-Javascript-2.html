@@ -7,11 +7,11 @@
     }
 
     thead {
-        border: 1px solid black;
+        background-color: bisque;
     }
 
 </style>
-<table>
+<table border="1">
     <thead>
         <tr>
             <th>no</th>
@@ -25,10 +25,10 @@
     <tbody>
         <script>
             let s1 = {"nama" :  "Andi", nilai:80};
-            let s2 = {"nama" :  "Agus", nilai:80};
-            let s3 = {"nama" :  "Ali", nilai:80};
-            let s4 = {"nama" :  "Anto", nilai:80};
-            let s5 = {"nama" :  "Arman", nilai:80};
+            let s2 = {"nama" :  "Agus", nilai:30};
+            let s3 = {"nama" :  "Ali", nilai:90};
+            let s4 = {"nama" :  "Anto", nilai:50};
+            let s5 = {"nama" :  "Arman", nilai:75};
 
             let siswa = [s1,s2,s3,s4,s5];
             
@@ -54,7 +54,7 @@
                     default : predikat = ""; break;
                 }
                 document.write(`
-                <tr bgcolor="${warna}">
+                <tr>
                     <td>${no++}</td>
                     <td>${s.nama}</td>
                     <td>${s.nilai}</td>
