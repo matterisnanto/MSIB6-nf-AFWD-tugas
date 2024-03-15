@@ -1,0 +1,69 @@
+<style>
+    table {
+        padding :10px; 
+        text-align :center; 
+        width :100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: bisque;
+    }
+
+</style>
+<table border="1">
+    <thead>
+        <tr>
+            <th>no</th>
+            <th>nama</th>
+            <th>nilai</th>
+            <th>keterangan</th>
+            <th>grade</th>
+            <th>predikat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <script>
+            let s1 = {"nama" :  "Andi", nilai:80};
+            let s2 = {"nama" :  "Agus", nilai:30};
+            let s3 = {"nama" :  "Ali", nilai:90};
+            let s4 = {"nama" :  "Anto", nilai:50};
+            let s5 = {"nama" :  "Arman", nilai:75};
+
+            let siswa = [s1,s2,s3,s4,s5];
+            
+            var no =1;
+            for(s of siswa){
+                //ternary
+                let ket = (s.nilai >= 60 ) ? "lulus" : "gagal";
+                let grade = "";
+                let predikat = "";
+                //if multi kondisi
+                if(s.nilai > 75 && s.nilai <= 100) grade = "A";
+                else if (s.nilai > 75 && s.nilai <= 85) grade = "B";
+                else if (s.nilai > 60 && s.nilai <= 75) grade = "C";
+                else if (s.nilai > 30 && s.nilai <= 60) grade = "D";
+                else if (s.nilai > 0 && s.nilai <= 30) grade = "E";
+                else grade = "";
+                switch(grade){
+                    case "A" : predikat = "Sempurna"; break;
+                    case "B" : predikat = "Baik"; break;
+                    case "C" : predikat = "Cukup"; break;
+                    case "D" : predikat = "Kurang"; break;
+                    case "E" : predikat = "Buruk"; break;
+                    default : predikat = ""; break;
+                }
+                document.write(`
+                <tr>
+                    <td>${no++}</td>
+                    <td>${s.nama}</td>
+                    <td>${s.nilai}</td>
+                    <td>${ket}</td>
+                    <td>${predikat}</td>
+                    <td>${grade}</td>
+                </tr>
+            `)
+            }
+        </script>
+    </tbody>
+</table>
