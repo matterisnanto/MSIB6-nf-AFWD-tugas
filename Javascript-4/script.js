@@ -26,7 +26,7 @@ function output(){
     let gaji;
     switch(jabatan){
         case 'Manajer' : gaji = 15000000; break;
-        case 'Asisten Manajer' : gaji = 1000000; break;
+        case 'Asisten Manajer' : gaji = 10000000; break;
         case 'Staf' : gaji = 5000000; break;
     }
     
