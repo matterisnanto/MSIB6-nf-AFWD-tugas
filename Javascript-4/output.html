@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slip Gaji</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        tbody tr td{
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        #jumlah {
+            background-color: #009dffc9;
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        footer p {
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>Slip Gaji</h1>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td id="namaout"></td>
+                </tr>
+                <tr>
+                    <td>Jabatan</td>
+                    <td>:</td>
+                    <td id="jabatanout"></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>:</td>
+                    <td id="statusout"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gaji Pokok</td>
+                    <td id="gapokout" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Jabatan (15% dari gaji)</td>
+                    <td id="tunjabout"colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>Tunjangan Keluarga (20% dari gaji)</td>
+                    <td id="tunkelout" colspan="2"></td>
+                </tr>
+                <tr>
+                    <td>BPJS (-10% dari gaji)</td>
+                    <td id="bpjsout" colspan="2"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Jumlah</td>
+                    <td id="jumlahout" colspan="2"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+    </fieldset>
+    <footer>
+        <p>copyright &copy; 2024 RACHMAT TRISNANTO</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
