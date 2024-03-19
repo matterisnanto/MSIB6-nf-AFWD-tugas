@@ -110,7 +110,7 @@ function output(){
                 </tr>
                 <tr>
                     <td>BPJS (-10% dari gaji)</td>
-                    <td colspan="2">${bpjs}</td>
+                    <td colspan="2">${mnsbpjs}</td>
                 </tr>
             </tbody>
             <tfoot>
