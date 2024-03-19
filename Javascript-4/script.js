@@ -135,7 +135,7 @@ function output(){
         showCloseButton: false,
         showConfirmButton: false,
         showCancelButton: false,
-        allowOutsideClick: false
+        allowOutsideClick: false,
       });
 
 }
