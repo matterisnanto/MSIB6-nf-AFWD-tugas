@@ -1,5 +1,6 @@
 let frm = document.getElementById('data');
 
+//pilihan jabatan
 let jab = ['Manajer', 'Asisten Manajer', 'Staf'];
 let pilihanjab = `<option value="">--Pilih Jabatan--</option>`
 for(let p in jab) {
@@ -7,22 +8,20 @@ for(let p in jab) {
 };
 frm.jabatan.innerHTML = pilihanjab
 
-
+//pilihan status
 let stat = ['Menikah', 'Belum Menikah']
 let pilihanstat = `<option value="">--pilih status--</option>`
 for(let q in stat) {
     pilihanstat += `<option value="${stat[q]}">${stat[q]}</option>`;
 };
 frm.status.innerHTML = pilihanstat
-//----
-
 
 function output(){
     let nama = frm.nama.value
     let jabatan = frm.jabatan.value
     let status = frm.status.value
     
-    //kondisi jabatan
+    //kondisi jabatan gaji
     let gaji;
     switch(jabatan){
         case 'Manajer' : gaji = 15000000; break;
