@@ -1,0 +1,29 @@
+body {
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    width: 100%;
+    background-image: url(https://i.pinimg.com/736x/86/93/4c/86934c1e87a0e48aaadb8df972c841e4.jpg);
+    padding: 50px;
+    background-position: 35px;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+div {
+    margin-bottom: 50px;
+    padding: 300px;
+    width: 40%;
+    background-position: 500px;
+}
+

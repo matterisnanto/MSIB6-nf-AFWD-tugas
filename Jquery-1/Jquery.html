@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas latihan Event Handler</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Suara Hewan</h1>
+    <h2>Harimau</h2>
+    <div id="harimau"></div>
+        <audio id="suaraharimau">
+            <source src="//www.google.com/logos/fnbx/animal_sounds/tiger.mp3">
+        </audio>
+        
+    <h2>Kucing</h2>
+    <div id="kucing"></div>
+        <audio id="suarakucing">
+            <source src="//www.google.com/logos/fnbx/animal_sounds/cat.mp3">
+        </audio>
+
+    <h2>Bebek</h2>
+    <div id="bebek"></div>
+        <audio id="suarabebek">
+            <source src="//www.google.com/logos/fnbx/animal_sounds/duck.mp3">
+        </audio>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#harimau").mouseover(function(){
+                $(this).css({
+                    background: "url('https://www.dbs.com/spark/index/id_id/site/assets/images/repository/articles/keuangan-di-tahun-macan-air.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat"
+                });
+                $("#suaraharimau")[0].play();
+            }).mouseout(function(){
+                $(this).css({
+                    background: "black"
+                });
+                $("#suaraharimau")[0].pause();
+                $("#suaraharimau")[0].currentTime = 0;
+            });
+            $("#kucing").mouseover(function(){
+                $(this).css({
+                    background: "url('https://imgsrv2.voi.id/1xBR_0SiCxYNtoJN6_wIqjPSMWFKI30OUGby7KqxKlw/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yMjE1MjYvMjAyMjEwMjUxMDIxLW1haW4uY3JvcHBlZF8xNjY2NjY4MDg4LmpwZw.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat"
+                });
+                $("#suarakucing")[0].play();
+            }).mouseout(function(){
+                $(this).css({
+                    background: "black"
+                });
+                $("#suarakucing")[0].pause();
+                $("#suarakucing")[0].currentTime = 0;
+            });
+            $("#bebek").mouseover(function(){
+                $(this).css({
+                    background: "url('https://www.putraperkasa.co.id/wp-content/uploads/2023/11/Bebek-Khaki-Campbell-Pict-01.webp')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat"
+                });
+                $("#suarabebek")[0].play();
+            }).mouseout(function(){
+                $(this).css({
+                    background: "black"
+                });
+                $("#suarabebek")[0].pause();
+                $("#suarabebek")[0].currentTime = 0;
+            });
+        })
+        
+    </script>
+</body>
+
+
+</html>
