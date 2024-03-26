@@ -1,18 +1,12 @@
 <?php
-
 $nama = 'Rachmat Trisnanto';
 $Jenis_kelamin = 'Laki-laki';
 $TTL = 'Bogor,1928';
 $status = 'belum menikah';
 $agama = 'islam';
 $alamat = 'Bogor';
-$notlp = 089272312414;
-$email= 'email@'
-
-
-
-
-
+$notlp = 89272312414;
+$email= 'email@';
 ?>
 
 <!DOCTYPE html>
