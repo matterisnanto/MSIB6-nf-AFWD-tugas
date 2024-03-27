@@ -8,66 +8,66 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
+      />
+      <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-    <div class="wrapper">
-      <div class="container main">
-        <div class="row">
-          <div class="col-md-6 side-image">
-            <div class="text">
-              <p>Belanja Kebutuhan elektronik? di BSI aja !!!</p>
+      <div class="wrapper">
+        <div class="container main">
+          <div class="row">
+            <div class="col-md-6 side-image">
+              <div class="text">
+                <p>Belanja Kebutuhan elektronik? di BSI aja !!!</p>
+              </div>
             </div>
-          </div>
-          <form class="col-md-6 right" action="PHP-2.php" method="post">
-            <div class="input-box">
-              <header>Form Belanja</header>
-              <div class="input-field">
-                <input
-                  type="text"
-                  class="input"
-                  id="napem"
-                  name="napembeli"
-                  required=""
-                  autocomplete="off"
-                />
-                <label for="napem">Nama Pembeli</label>
-              </div>
-              <div class="input-group mb-3">
-                <label class="input-group-text" for="produkpilihan"
-                  >Produk</label
-                >
-                <select class="form-select" name="pilprod" id="produkpilihan">
-                  <option selected>--pilih produk--</option>
-                  <option value="TV">TV</option>
-                  <option value="kulkas">Kulkas</option>
-                  <option value="mesin cuci">Mesin Cuci</option>
-                  <option value="AC">AC</option>
-                </select>
-              </div>
-              <div class="input-group">
-                <label for="jml">Jumlah Barang</label>
-                <input type="number" name="jmlbrg" class="input" id="jml" />
-              </div>
-              <div class="input-field">
-                <input type="submit" name="lanjut" class="submit" value="Submit"  />
-              </div>
-          </form>
+            <form class="col-md-6 right" action="PHP-2.php" method="post">
+              <div class="input-box">
+                <header>Form Belanja</header>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    class="input"
+                    id="napem"
+                    name="napembeli"
+                    required=""
+                    autocomplete="off"
+                  />
+                  <label for="napem">Nama Pembeli</label>
+                </div>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="produkpilihan"
+                    >Produk</label
+                  >
+                  <select class="form-select" name="pilprod" id="produkpilihan">
+                    <option selected>--pilih produk--</option>
+                    <option value="TV">TV</option>
+                    <option value="kulkas">Kulkas</option>
+                    <option value="mesin cuci">Mesin Cuci</option>
+                    <option value="AC">AC</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="jml">Jumlah Barang</label>
+                  <input type="number" name="jmlbrg" class="input" id="jml" />
+                </div>
+                <div class="input-field">
+                  <input type="submit" name="lanjut" class="submit" value="Submit"  />
+                </div>
+            </form>
 
+          </div>
         </div>
       </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"
+      ></script>
     </body>
     </html>
     
@@ -77,7 +77,7 @@
    
 <?php
 
-    $nama = $_POST['napembeli'];
+$nama = $_POST['napembeli'];
 $produk = $_POST['pilprod'];
 $jmlbrg = $_POST['jmlbrg'];
 $proses = $_POST['lanjut'];
