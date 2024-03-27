@@ -2,7 +2,7 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>TOKO BSI</title>
       <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -54,11 +54,6 @@
                 <input type="submit" name="lanjut" class="submit" value="Submit"  />
               </div>
           </form>
-          
-          <script>
-            
-    }
-          </script>
 
         </div>
       </div>
@@ -75,7 +70,6 @@
     ></script>
     </body>
     </html>
-    <title>TOKO KOTOK</title>
     
    
 
