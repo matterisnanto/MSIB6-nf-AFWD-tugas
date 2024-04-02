@@ -33,7 +33,7 @@ include_once 'webmenu.php';
         <div class="row">
           <div class="col-lg-3 col-md-3">
             <div class="header__logo">
-              <a href="index.html"><img src="img/logo.png" alt /></a>
+              <a href="index.php"><img src="img/logo.png" alt /></a>
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
@@ -50,22 +50,6 @@ include_once 'webmenu.php';
                   }
               }
 ?>
-              <!-- <li><a href="#">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="shop-details.html">Shop Details</a></li>
-                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                    <li><a href="checkout.html">Check Out</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                  </ul></li>
-              </ul> -->
-              <!-- <?php
-              foreach ($menu_atas as $key => $value) {
-                  echo "<li><a href='index.php?hal=$key'>$value</a>  
-
-                  </li>";
-              }
-?> -->
             </nav>
           </div>
           <div class="col-lg-3 col-md-3">
